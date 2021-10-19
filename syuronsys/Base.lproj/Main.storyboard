@@ -56,6 +56,9 @@
                                 <rect key="frame" x="643" y="392" width="440" height="349"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="hondana"/>
+                                <connections>
+                                    <segue destination="HtR-Pl-D72" kind="presentation" animates="NO" id="GbX-xi-57W"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXP-tO-Hcd">
                                 <rect key="frame" x="156" y="122" width="370" height="656"/>
@@ -79,6 +82,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdo-me-Way" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="764.8241206030151" y="75.539568345323744"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ul8-Dt-ZAT">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="HtR-Pl-D72" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1VU-F8-Ffh">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="U53-Gi-0R1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dWx-50-azb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1648" y="87"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Lce-vH-pEm">
