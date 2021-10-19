@@ -16,6 +16,7 @@
 		45380F40271E8586001D90B2 /* syuronsysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45380F3F271E8586001D90B2 /* syuronsysTests.swift */; };
 		45380F4B271E8586001D90B2 /* syuronsysUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45380F4A271E8586001D90B2 /* syuronsysUITests.swift */; };
 		45380F5C271E956B001D90B2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45380F5B271E956B001D90B2 /* MenuViewController.swift */; };
+		45C44FE8271EE23C00F9F4FA /* WordsearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C44FE7271EE23C00F9F4FA /* WordsearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		45380F4A271E8586001D90B2 /* syuronsysUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = syuronsysUITests.swift; sourceTree = "<group>"; };
 		45380F4C271E8586001D90B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45380F5B271E956B001D90B2 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		45C44FE7271EE23C00F9F4FA /* WordsearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				45380F2C271E857E001D90B2 /* ViewController.swift */,
 				45380F5B271E956B001D90B2 /* MenuViewController.swift */,
 				45380F2E271E857E001D90B2 /* Main.storyboard */,
+				45C44FE7271EE23C00F9F4FA /* WordsearchViewController.swift */,
 				45380F31271E8586001D90B2 /* Assets.xcassets */,
 				45380F33271E8586001D90B2 /* LaunchScreen.storyboard */,
 				45380F36271E8586001D90B2 /* Info.plist */,
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45C44FE8271EE23C00F9F4FA /* WordsearchViewController.swift in Sources */,
 				45380F2D271E857E001D90B2 /* ViewController.swift in Sources */,
 				45380F29271E857E001D90B2 /* AppDelegate.swift in Sources */,
 				45380F2B271E857E001D90B2 /* SceneDelegate.swift in Sources */,
