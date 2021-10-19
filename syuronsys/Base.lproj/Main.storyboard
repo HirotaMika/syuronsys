@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="syuronsys" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAZ-Yi-mut">
+                                <rect key="frame" x="0.0" y="0.0" width="1194" height="814"/>
+                                <state key="normal" image="opening"/>
+                                <connections>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LVj-Mj-hMg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JAZ-Yi-mut" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5EQ-2c-TWl"/>
+                            <constraint firstItem="JAZ-Yi-mut" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="b7o-BW-zGR"/>
+                            <constraint firstItem="JAZ-Yi-mut" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="g0Z-Sn-NYn"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="JAZ-Yi-mut" secondAttribute="bottom" id="gIR-3B-KkZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="rDe-sA-PCQ" kind="presentation" identifier="start" animates="NO" id="Dst-O1-rfL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19.597989949748744" y="75.539568345323744"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="LsB-ZK-soO">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" modalPresentationStyle="fullScreen" id="rDe-sA-PCQ" customClass="MenuViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wif-qG-Ekc">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="GVN-m7-D0C">
+                                <rect key="frame" x="0.0" y="0.0" width="1194" height="814"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3n-HF-zlt">
+                                <rect key="frame" x="643" y="392" width="440" height="349"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="hondana"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXP-tO-Hcd">
+                                <rect key="frame" x="156" y="122" width="370" height="656"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="search"/>
+                                <connections>
+                                    <segue destination="smZ-Xl-sFL" kind="show" id="N4S-rE-8Y9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iiM-WW-Dui"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iiM-WW-Dui" firstAttribute="trailing" secondItem="GVN-m7-D0C" secondAttribute="trailing" id="NLS-aj-xRE"/>
+                            <constraint firstItem="GVN-m7-D0C" firstAttribute="top" secondItem="iiM-WW-Dui" secondAttribute="top" id="Z86-iU-QQ7"/>
+                            <constraint firstItem="GVN-m7-D0C" firstAttribute="leading" secondItem="iiM-WW-Dui" secondAttribute="leading" id="b8h-LT-Qpg"/>
+                            <constraint firstItem="iiM-WW-Dui" firstAttribute="bottom" secondItem="GVN-m7-D0C" secondAttribute="bottom" id="o1G-Pe-mdR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cdo-me-Way" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764.8241206030151" y="75.539568345323744"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Lce-vH-pEm">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="smZ-Xl-sFL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zjs-nt-CHr">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ph7-yE-mw9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uiS-bq-tmI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ks6-0o-vAa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="765" y="1022"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="2731" height="2047"/>
+        <image name="hondana" width="1016" height="807"/>
+        <image name="opening" width="2732" height="2047"/>
+        <image name="search" width="719.5" height="1273"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
